@@ -23,8 +23,8 @@
 .load text {
     animation: stroke 5s infinite alternate;
     stroke-width: 2;
-    stroke: white;
-    font-size: 50px;
+    stroke: var(--white);
+    font-size: var(--fs-3xl);
     font-weight: 500;
 }
 
@@ -35,7 +35,7 @@
 @keyframes stroke {
     0% {
         fill: #6022EA;
-        stroke: white;
+        stroke: var(--white);
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;
         stroke-width: 2;
@@ -321,7 +321,7 @@ ul {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #FDFCFC;
+    background: var(--color-white);
     box-shadow: 0px 0px 17.6900577545166px 0px #00000029;
 }
 
@@ -354,7 +354,8 @@ ul {
     max-width: 462px;
     width: 100%;
     border-radius: 16px;
-    padding: 0.5px 0.5px;
+    padding: 0.1px 0px;
+    border: 1px solid transparent;
     background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
@@ -490,14 +491,14 @@ ul {
     content: '•';
     text-align: center;
     opacity: 0.2;
-    color: #985FEC !important;
+    color: var(--slick-dot) !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-dots li.slick-active button:before {
     opacity: 1 !important;
-    color: #985FEC !important;
+    color: var(--slick-dot) !important;
 }
 
 .waiting-box {
@@ -517,14 +518,14 @@ ul {
 
 .box-btn {
     padding: 16px 42px;
-    background: #FDFCFC;
+    background: var(--color-white);
     border-radius: 61px;
     border: 0px solid transparent;
     transition: 0.3s linear;
 }
 
 .box-btn:hover {
-    background-color: #fdfcfc71;
+    background-color: var(--button-color);
 }
 
 
@@ -532,7 +533,7 @@ ul {
     width: 32px;
     height: 32px;
     border-radius: 16px;
-    background: #FFFFFF29;
+    background: var(--icon-color);
     transition: 0.3s linear;
 }
 
@@ -577,11 +578,11 @@ ul {
 }
 
 .services-box:hover svg path {
-    fill: white;
+    fill: var(--white);
 }
 
 .services-box2:hover svg path {
-    fill: white;
+    fill: var(--white);
 }
 
 .services-box:hover .services-cricle {
@@ -682,7 +683,7 @@ ul {
         width: 88px;
         height: 88px;
         border-radius: 50%;
-        background: #FDFCFC;
+        background: var(--color-white);
         box-shadow: 0px 0px 17.6900577545166px 0px #00000029;
     }
 }
@@ -828,7 +829,6 @@ ul {
         height: 4px;
         width: 35px;
         background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
-        background-color: white;
         display: block;
         transition: all 300ms linear;
     }
@@ -837,7 +837,6 @@ ul {
         height: 4px;
         width: 35px;
         background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
-        background-color: white;
         display: block;
         transition: all 300ms linear;
     }
@@ -846,7 +845,6 @@ ul {
         height: 4px;
         width: 35px;
         background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
-        background-color: white;
         display: block;
         transition: all 300ms linear;
     }
